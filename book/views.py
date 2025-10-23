@@ -13,7 +13,7 @@ class ListBookView(LoginRequiredMixin,ListView):
     template_name = 'book/book_list.html'
     model = Book
     paginate_by = ITEM_PER_PAGE
-
+    
 class DetailBookView(LoginRequiredMixin,DetailView):
     template_name = 'book/book_detail.html'
     model = Book
